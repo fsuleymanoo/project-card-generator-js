@@ -8,6 +8,42 @@
 /* Font Google */
 body {
   font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(241, 241, 241);
 }
 
-/* Add your code here */
+.container {
+  width: 270px;
+  height: 380px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.card-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+}
+
+.card-corner {
+  font-size: 65px;
+  margin: 8px;
+}
+
+.card-corner.left {
+  align-self: flex-start;
+}
+
+.card-corner.right {
+  align-self: flex-end;
+  transform: rotate(180deg);
+}
